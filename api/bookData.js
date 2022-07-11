@@ -4,7 +4,6 @@ import { clientCredentials } from '../utils/client';
 
 const dbUrl = clientCredentials.databaseURL;
 
-// TODO: GET BOOKS
 const getBooks = (uid) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/books.json?orderBy="uid"&equalTo="${uid}"`)
     .then((response) => {
@@ -17,14 +16,12 @@ const getBooks = (uid) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-// TODO: DELETE BOOK
 const deleteBook = (firebaseKey) => new Promise((resolve, reject) => {
   axios.delete(`${dbUrl}/books/${firebaseKey}.json`)
     .then(() => resolve('deleted'))
     .catch((error) => reject(error));
 });
 
-// TODO: GET SINGLE BOOK
 const getSingleBook = (firebaseKey) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/books/${firebaseKey}.json`)
     .then((response) => resolve(response.data))
@@ -36,9 +33,7 @@ const createBook = (bookObj) => new Promise((resolve, reject) => {
     .then((response) => {
       const payload = { firebaseKey: response.data.name };
       axios.patch(`${dbUrl}/books/${response.data.name}.json`, payload)
-        .then(() => {
-          console.warn('Book Created!');
-        });
+        .then(resolve);
     }).catch(reject);
 });
 
@@ -47,8 +42,6 @@ const updateBook = (bookObj) => new Promise((resolve, reject) => {
     .then(resolve)
     .catch(reject);
 });
-
-// TODO: STRETCH...SEARCH BOOKS
 
 export {
   getBooks,
