@@ -1,7 +1,7 @@
-// import axios from 'axios';
-// import firebaseConfig from './apiKeys';
+import axios from 'axios';
+import { clientCredentials } from '../utils/client';
 
-// const dbUrl = firebaseConfig.databaseURL;
+const dbUrl = clientCredentials.databaseURL;
 
 // FIXME:  GET ALL AUTHORS
 const getAuthors = () => {};
@@ -9,8 +9,11 @@ const getAuthors = () => {};
 // FIXME: CREATE AUTHOR
 const createAuthor = () => {};
 
-// FIXME: GET SINGLE AUTHOR
-const getSingleAuthor = () => {};
+const getSingleAuthor = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/authors/${firebaseKey}.json`)
+    .then((response) => resolve(response.data))
+    .catch(reject);
+});
 
 // FIXME: DELETE AUTHOR
 const deleteSingleAuthor = () => {};
