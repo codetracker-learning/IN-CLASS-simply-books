@@ -13,7 +13,7 @@ function BookCard({ bookObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem', margin: '10px' }}>
       <Card.Img variant="top" src={bookObj.image} alt={bookObj.title} style={{ height: '400px' }} />
       <Card.Body>
         <Card.Title>{bookObj.title}</Card.Title>
@@ -39,7 +39,7 @@ BookCard.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string,
     sale: PropTypes.bool,
-    price: PropTypes.string,
+    price: PropTypes.number,
     firebaseKey: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
