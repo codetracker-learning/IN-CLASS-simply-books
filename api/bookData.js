@@ -20,6 +20,7 @@ const getBooks = (uid) => new Promise((resolve, reject) => {
 // TODO: DELETE BOOK
 const deleteBook = (firebaseKey) => new Promise((resolve, reject) => {
   axios.delete(`${dbUrl}/books/${firebaseKey}.json`)
+    .then(() => resolve('deleted'))
     .catch((error) => reject(error));
 });
 
@@ -43,6 +44,7 @@ const createBook = (bookObj) => new Promise((resolve, reject) => {
 
 const updateBook = (bookObj) => new Promise((resolve, reject) => {
   axios.patch(`${dbUrl}/books/${bookObj.firebaseKey}.json`, bookObj)
+    .then(resolve)
     .catch(reject);
 });
 

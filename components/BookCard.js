@@ -9,7 +9,7 @@ function BookCard({ bookObj, onUpdate }) {
   // FOR DELETE, WE NEED TO REMOVE THE BOOK AND HAVE THE VIEW RERENDER,
   // SO WE PASS THE FUNCTION FROM THE PARENT THAT GETS THE BOOKS
   const deleteThisBook = () => {
-    deleteBook(bookObj.firebaseKey).then(onUpdate);
+    deleteBook(bookObj.firebaseKey).then(() => onUpdate());
   };
 
   return (
@@ -39,7 +39,7 @@ BookCard.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string,
     sale: PropTypes.bool,
-    price: PropTypes.number,
+    price: PropTypes.string,
     firebaseKey: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
