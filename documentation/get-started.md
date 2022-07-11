@@ -1,18 +1,23 @@
-# Simply Books
-
-[See Live Demo of this Template](https://drt-next-js-template.netlify.app/)
+# React/Next.js Template
 
 - [Get Started](#get-started)
 - [Starting the Project](#starting-the-project)
-- [React Topics](#react-topics)
-### Extra Info
 - [Using axios](#using-axios)
 - [Deploying on Netlify](#deploying-on-netlify)
 ___
+## Getting Started
+### Use Template
+#### 1. To get started, click the GREEN "Use this Template" button at the top of the repo
+<img width="915" alt="Screen Shot 2022-07-06 at 12 54 01 PM" src="https://user-images.githubusercontent.com/29741570/177612998-4aac9237-5a1e-4f13-8ae0-468587521564.png">
+
+#### 2. Make sure YOUR github account is selected in the dropdown and name your project
+<img width="763" alt="Screen Shot 2022-07-06 at 12 54 48 PM" src="https://user-images.githubusercontent.com/29741570/177613126-dd38f678-7553-4f27-8a4a-75680f14d71e.png">
+
+#### 3. Clone your new repo to your local machine
+#### 4. Go to the **NEXT** section
 
 ## Starting the Project
-1. Clone the repo on your local machine
-1. Grab the credentials from your **Almost Amazon** project from earlier in the cohort. 
+1. Create a Firebase project and set up authentication. Use [these videos](https://vimeo.com/showcase/codetracker-firebase) as a refresher if needed.
 1. Create a `.env` file at the root of the project
 1. Copy/Paste the contents of the `.env.sample` file to your newly created `.env` file.
 1. Copy over all of your Firebase values into the `.env` file.
@@ -32,29 +37,6 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - If you see the following error, you did not follow all the setup steps correctly and failed to add your Firebase creds. Go back and do that NOW.
 
 <img width="1043" alt="Screen Shot 2022-07-06 at 11 18 45 AM" src="https://user-images.githubusercontent.com/29741570/177612501-c2628f18-4bbd-4de9-aae6-27ffba1172d6.png">
-
-
-## React Topics
-In this project, we are going to learn some of the basics of React by using a project that you are already familiar with.
-
-Topics will include:
-- Google Authentication with Firebase
-- React basics and working with components
-- State and working with events
-- Rendering lists and conditional content (READ)
-- Debugging React apps
-- Props
-- Hooks
-  - useState (State)
-  - useEffect
-  - useMemo (if time permits)
-  - useCallback (if time permits)
-  - useContext (if time permits)
-- Routing (including dynamic routing)
-  - Links & Navigation
-- Forms (CREATE/UPDATE)
- - Two-way binding (listening to changes in input as well as the value)
-- All CRUD concepts touched in topics above
 
 ### Using Axios
 > For every file you will need to make an XHR request in, you will need to require Axios
