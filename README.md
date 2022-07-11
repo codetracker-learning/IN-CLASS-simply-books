@@ -39,6 +39,7 @@ In this project, we are going to learn some of the basics of React by using a pr
 
 Topics will include:
 - Google Authentication with Firebase
+- User specific data
 - React basics and working with components
 - State and working with events
 - Rendering lists and conditional content (READ)

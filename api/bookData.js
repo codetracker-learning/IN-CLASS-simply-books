@@ -1,5 +1,5 @@
 import axios from 'axios';
-import clientCredentials from '../utils/client';
+import { clientCredentials } from '../utils/client';
 // API CALLS FOR BOOKS
 
 const dbUrl = clientCredentials.databaseURL;
