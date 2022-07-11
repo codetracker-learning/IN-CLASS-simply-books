@@ -13,7 +13,7 @@ function Home() {
         <Button>Add A Book</Button>
       </Link>
 
-      {/* TODO: map over books here  */}
+      {/* TODO: map over books here using BookCard component */}
     </>
   );
 }
