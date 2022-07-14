@@ -7,7 +7,7 @@ import {
   Navbar, Container, Nav,
 } from 'react-bootstrap';
 
-export default function NavBar({ user }) {
+export default function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -23,15 +23,6 @@ export default function NavBar({ user }) {
             </Link>
             <Link passHref href="/book/new">
               <Nav.Link>Create Book</Nav.Link>
-            </Link>
-            <Link passHref href="/">
-              <Nav.Link>Authors</Nav.Link>
-            </Link>
-            <Link passHref href="/">
-              <Nav.Link>Create Author</Nav.Link>
-            </Link>
-            <Link passHref href="/profile">
-              <Nav.Link><img className="profile-img" src={user.photoURL} alt={user.displayName} /></Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>
