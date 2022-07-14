@@ -4,6 +4,7 @@
       "firebaseKey" : "-MiBsfuTafbEQ7eAULxV",
       "first_name" : "Tomi",
       "last_name" : "Adeyemi",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Tomi_Adeyemi_2020.JPG",
       "favorite": true,
       "uid": ""
     },
@@ -12,6 +13,7 @@
       "firebaseKey" : "-MiBt86VzkC-EGmJnxjm",
       "first_name" : "Barack",
       "last_name" : "Obama",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
       "favorite": true,
       "uid": ""
     },
@@ -20,6 +22,7 @@
       "firebaseKey" : "-MiBtwf1BwN9pGavQeR3",
       "first_name" : "Howard",
       "last_name" : "Zinn",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Howard_Zinn%2C_2009_%28cropped%29.jpg",
       "favorite": false,
       "uid": ""
     },
@@ -28,6 +31,7 @@
       "firebaseKey" : "-MiBuOfHv9NCKB_cneij",
       "first_name" : "Angie",
       "last_name" : "Thomas",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Angie_thomas_9022008.jpg",
       "favorite": false,
       "uid": ""
     },
@@ -36,6 +40,7 @@
       "firebaseKey" : "-MiBulenBnY8by9Xn7q1",
       "first_name" : "Colson",
       "last_name" : "Whitehead",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Colson_Whitehead_BBF_2011_Shankbone.JPG",
       "favorite": false,
       "uid": ""
     },
@@ -44,6 +49,7 @@
       "firebaseKey" : "-MiBv9_aOEJQWoobjz_U",
       "first_name" : "Mikki",
       "last_name" : "Kendall",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Author%2C_activist%2C_and_cultural_critic_Mikki_Kendall.jpg",
       "favorite": true,
       "uid": ""
     },
@@ -52,6 +58,7 @@
       "firebaseKey" : "-MiBvQiWr6XNwNa1i3-0",
       "first_name" : "L.L",
       "last_name" : "McKinney",
+      "image": "https://mpd-biblio-authors.imgix.net/200066919.jpg?fit=crop&crop=faces&w=870&h=870",
       "favorite": true,
       "uid": ""
     },
@@ -60,6 +67,7 @@
       "firebaseKey" : "-MiBw4tCvNZd23yTVDQw",
       "first_name" : "James",
       "last_name" : "Baldwin",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/James_Baldwin_33_Allan_Warren.jpg",
       "favorite": false,
       "uid": ""
     }
