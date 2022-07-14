@@ -16,15 +16,6 @@ const viewAuthorDetails = (authorFirebaseKey) => new Promise((resolve, reject) =
     .then(([authorObject, authorBooksArray]) => {
       resolve({ ...authorObject, books: authorBooksArray });
     }).catch((error) => reject(error));
-
-  // // .then nexting
-  // getSingleAuthor(authorFirebaseKey)
-  //   .then((authorObject) => {
-  //     getAuthorBooks(authorFirebaseKey)
-  //       .then((authorBooksArray) => {
-  //         resolve({ ...authorObject, books: authorBooksArray });
-  //       });
-  //   }).catch((error) => reject(error));
 });
 
 const deleteAuthorBooks = (authorId) => new Promise((resolve, reject) => {
@@ -34,7 +25,6 @@ const deleteAuthorBooks = (authorId) => new Promise((resolve, reject) => {
 
     Promise.all(deleteBookPromises).then(() => {
       deleteSingleAuthor(authorId).then(resolve);
-      // deleteSingleAuthor(authorId).then((response) => resolve(response));
     });
   }).catch((error) => reject(error));
 });
