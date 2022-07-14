@@ -50,9 +50,9 @@ Topics will include:
 - Routing (including dynamic routing)
   - Links & Navigation
 - Forms (CREATE/UPDATE)
- - Two-way binding (listening to changes in input as well as the value)
-- All CRUD concepts touched in topics above
+  - Two-way binding (listening to changes in input as well as the value)
 
+**_All CRUD concepts touched in topics above_**
 ### Using Axios
 > For every file you will need to make an XHR request in, you will need to require Axios
 ```js
