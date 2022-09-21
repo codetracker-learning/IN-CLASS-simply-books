@@ -53,21 +53,6 @@ Topics will include:
   - Two-way binding (listening to changes in input as well as the value)
 
 **_All CRUD concepts touched in topics above_**
-### Using Axios
-> For every file you will need to make an XHR request in, you will need to require Axios
-```js
-import axios from 'axios';
-
-const examplePromise = () => {
-  axios.get('http://localhost:3001/example')
-    .then((data) => {
-      console.warn(data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
-```
 
 ### Deploying on Netlify
 Netlify will automatically detect your project and prepopulate the settings, but should something go wrong and it does not, here are the commands:
